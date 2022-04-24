@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+/*CSS ON THE TOP OF PAGE */
+
+body{
+    background:rgb(66, 64, 64);
+}
+
+a:visited, a:link, a:active{
+    color: whitesmoke;
+}
+
+.header{
+    background:rgb(66, 64, 64);
+}
+.container-header{
+    display: flex;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    align-items: center;
+    transform: translateY(50%);
+    margin-bottom: 70px;
+    background:rgb(66, 64, 64);
+}
+
+
+.logotipo{
+    display: flex;
+    /* transform: translateY(50%); */
+    transform: translateX(-60%);
+}
+.logotipo img{
+    width: 150px;
+    /* background-color: blue; */
+}
+
+.navi-bar{
+    width: auto;
+    /* background-color: aqua; */
+    transform: translateX(-20%);
+}
+
+.menu-config{
+    font-size: 25px;
+    border: 1px solid rgb(44, 43, 43);
+    box-shadow: 1px 1px 8px rgb(44, 43, 43);
+    border-radius: 5px;
+    margin: 2px;
+    color: whitesmoke;
+    font-family: 'Roboto';
+    font-weight: bold;
+
+}
+
+.menu-config:hover{
+    background:rgb(22, 20, 20);
+}
+
+.navi-bar a{
+    padding: 5px;
+}
+/*#######################################################################################*/
+
+/*CSS ON MAIN PAGE */
+
+.hamburger-section{
+    display: grid;
+    grid-template-columns: 40px repeat(3, 3fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-areas: "ketchup header description1 mustard"
+                         "ketchup main description2 mustard"
+                         "ketchup footer description3 mustard";
+    background-color: rgb(22, 20, 20);
+}
+
+.burger1{
+    grid-area: header;
+    align-items: center;
+}
+.burger1 img, .burger2 img, .burger3 img{
+    width: 370px;
+    border-radius: 5%;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 1px solid rgb(44, 43, 43);
+    box-shadow: 1px 1px 8px rgb(44, 43, 43);
+}
+
+.burger2{
+    grid-area: main;
+    align-items: center;
+}
+
+.burger3{
+    grid-area: footer;
+    align-items: center;
+}
+
+.description1, .description2, .description3{
+    margin-top: 15px;
+    align-self: center;
+    justify-self: center;
+    color: whitesmoke;
+    border:1 rgb(44, 43, 43) solid;
+    border-radius: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border: 1px solid rgb(44, 43, 43);
+    box-shadow: 1px 1px 8px rgb(44, 43, 43), -1px -1px 8px rgb(44, 43, 43);
+}
+
+.description1{
+    grid-area: description1;
+}
+
+.description2{
+    grid-area: description2;
+}
+
+.description3{
+    grid-area: description3;
+}
+
+.ketchup{
+    grid-area: ketchup;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.mustard{
+    grid-area: mustard;
+    background: url("../assets/queijo-derretido.png") no-repeat;
+    width: auto;
+    object-fit: cover;
+}
+
+.name{
+    font-size: 20px;
+    font-family: 'Roboto';
+    padding: 10px;
+}
+
+.description{
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 100;
+    /* word-spacing: 1px; */
+    letter-spacing: 1px;
+}
+
+.value{
+    float: right;
+    font-family: 'Didot','Roboto';
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.whatsapp img{
+    width: 150px;
+    position:-webkit-sticky;
+    position: sticky;
+}
+
+.whatsapp{
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    grid-area: 3/4/4/4;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background:rgb(85, 82, 82);
+    color: whitesmoke;
+    clear: right;
+}
+
+.about nav{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    word-spacing: 1;
+}
+
+.about a:hover{
+    color:rgb(22, 20, 20);
+}
+
+.about h6{
+    padding-right: 15px;
+    font-weight: 200;
+}
+
+.about h5{
+    font-weight: 200;
+    word-spacing: 2;
+}
+/*#######################################################################################*/
